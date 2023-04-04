@@ -1,39 +1,43 @@
 # Community Software Analysis Proposal
 Please edit this file and push to your repository.
 
-## Software: *NAME_OF_PACKAGE_HERE*
+## Software: Python NumPy on Github
 
-*Write a paragraph describing what the software does and who its
-primary audience is.*
+NumPy has a global audience, it is the go-to package for linear algebra/scientific computing in Python. It is centered around the ndarray (n-dimensional array object) which allows the user to perform various math functions on arrays with ease. These include trig, hyberbolic, rounding/sum/product/difference, exponents/logarithm, bitwise, rational, matrix and specific arithmetic functions on arrays. The functions strive to perform at C/C++ speeds with the syntactic simplicity of Python. It is a go-to package for machine learning projects done in Python, when paired with Pandas for graph creation. It also includes tools for integrating C/C++ and Fortran.
+
+Note: Numpy has various repositories on Git (numpy, numpy-tutorials, numpy.org, etc...), I will be observing "numpy/numpy."
 
 ### Stats
 
-| Description | Your answer |
+| Description | "The fundamental package for scientific computing with Python" |
 |---------|-----------|
-| Repository URL |    |
-| Main/documentation website |    |
-| Year project was started |   |
-| Number of contributors in the past year | `git shortlog -se --since=2022-03-01` may be useful |
-| Number of contributors in the lifetime of the project |   |
+| Repository URL |  https://github.com/numpy/numpy.git  |
+| Main/documentation website |  https://numpy.org/doc/stable/user/whatisnumpy.html  |
+| Year project was started | 1995  |
+| Number of contributors in the past year | `git shortlog -se --since=2022-03-01` 30 contributors after running command |
+| Number of contributors in the lifetime of the project | 1,462  |
 | Number of distinct affiliations | 1, 2-5, 5-10, >10 |
-| Where do development discussions take place? | e.g., GitHub/GitLab issues, mailing list, Slack, etc.  |
-| Typical number of emails/comments per week? |   |
-| Typical number of commits per week? |  |
-| Typical commit size | `git log --shortstat` may be useful |
+| Where do development discussions take place? | GitHub/GitLab issues, a changelog tracks all changes made by developers  |
+| Typical number of emails/comments per week? | unknown  |
+| Typical number of commits per week? | ~12 commits per week |
+| Typical commit size | `git log --shortstat` typically 1-2 insertions per commit, sometimes dozens, sometimes over 100 |
 | How does the project accept contributions? | e.g., pull requests, patches on mailing lists   |
-| Does the project have an automated test suite? | yes/no |
-| Does the project use continuous integration? | yes/no |
-| Are any legal/licensing steps required to contribute? | no or explain below |
+| Does the project have an automated test suite? | yes |
+| Does the project use continuous integration? | yes |
+| Are any legal/licensing steps required to contribute? | The license.txt doc appears to indicate that steps are required to contribute |
 
 ### Install and run
 
 Check the following boxes when complete or add a note below if you
 encountered a problem.
 
-- [ ] I have installed the software
-- [ ] I have run at least one example
-- [ ] I have run the test suite
-- [ ] The test suite passes
+- [Y] I have installed the software
+- [Y] I have run at least one example
+- [Y] I have run the test suite    
+    (run setup.py, run runtests.py)
+- [N] The test suite passes    
+    fails: no module named 'Cython'
+    Cython installation likely required for setup
 
 ### Notes/concerns/risks
 
